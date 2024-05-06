@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+    type="text/css"
+    href="style.css">
+    <style>
+        body {
+            background-image: url("image/OIP.jpg");
+            background-size: 100% auto;
+        }
+        .center, h1 {
+            text-align: center;
+
+        }
+        .text {
+            background-color: aliceblue;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="text">Lorem ipsum</h1>
+    <p class="text">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget nibh lacus. Nulla rhoncus elit ac odio accumsan tincidunt. Phasellus ut porta enim, vel imperdiet dolor. Donec a arcu quis purus varius consectetur. Morbi eu volutpat nibh. In eu iaculis velit. Quisque quis enim sollicitudin, congue dui eu, pulvinar mi.
+    </p>
+    <p class="center">
+        <img src="image/OIP (1).jpg">
+    </p>
+    <h1 class="text">Lorem ipsum</h1>
+    <p class="text">
+    Pellentesque tristique lorem eu est dignissim cursus. Cras scelerisque commodo quam, sed finibus mi condimentum sed. Curabitur ornare porta dolor, efficitur finibus sem venenatis sed. Praesent vitae efficitur neque. Nulla suscipit velit a elit ultrices ultricies. Sed ut mi ac eros facilisis ornare. In hac habitasse platea dictumst. Nunc tempus posuere urna, ut molestie neque tincidunt id. Nulla quis metus sit amet neque porta ullamcorper a non metus.
+    </p>
+    <p class="center">
+        <img src="image/OIP (2).jpg">
+    </p>
+    <h1 class="text">Lorem ipsum</h1>
+    <p class="text">
+    Fusce scelerisque felis ut molestie molestie. Nam sagittis nunc ex, in bibendum nisl suscipit in. Nam ac sapien lectus. Morbi ultrices nisl ipsum. Morbi id velit enim. Donec a erat ut risus finibus mattis. Maecenas eleifend quam vel dui aliquet, ultrices facilisis enim gravida. In tempor aliquam luctus. Nam feugiat quam id tellus malesuada congue. Morbi fringilla sapien consequat arcu convallis, in venenatis nibh feugiat. Fusce consequat feugiat sagittis.
+    </p>
+    <p class="center">
+        <img src="image/OIP (3).jpg">
+    </p>
+</body>
+</html>
