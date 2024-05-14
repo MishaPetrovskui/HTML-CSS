@@ -1,0 +1,119 @@
+1
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit List</title>
+    <style>
+        div {
+        background-color: #ffc0cb;
+        font-family: Arial, sans-serif;
+        }
+        .container {
+            background-color: #ffd9e6;
+            padding: 10px;
+            border-radius: 10px;
+            width: 200px;
+            margin: 50px auto;
+        }
+        ul {
+            list-style-type: none;
+            padding: 20px;
+            margin: 0;
+        }
+        li {
+            background-color: #ffafaf;
+            padding: 10px;
+            margin-bottom: 5px;
+            border-radius: 5px;
+        }
+        li span {
+            padding: 5px;
+            color: white;
+        }
+        li span.fruit {
+            background-color:palevioletred;
+            padding: 10px;
+            color: white;
+        }
+        li span.number {
+        color: white;
+        }
+    </style>
+  </head>
+  <body>
+    <div>
+      <ul>
+        <li><span class="number">1.</span> <span class="fruit">Apple</span></li>
+        <li><span class="number">2.</span> <span class="fruit">Orange</span></li>
+        <li><span class="number">3.</span> <span class="fruit">Pineapple</span></li>
+        <li><span class="number">4.</span> <span class="fruit">Pear</span></li>
+        <li><span class="number">5.</span> <span class="fruit">Cherry</span></li>
+      </ul>
+    </div>
+  </body>
+</html>
+
+
+2
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual List</title>
+    <style>
+      ul.check-list {
+        list-style: none;
+        list-style-position: inside;
+        padding: 10px;
+      }
+      .even {
+        padding: 10px;
+        background-color: #86c2f77c;
+      }
+      .odd {
+        padding: 10px;
+        background-color: #b0c4decc;
+      }
+      .checked {
+        padding: 10px;
+        background-color: #ccc;
+      }
+      .marked::before {
+        content: "☑️";
+        margin-right: 20px;
+      }
+      .not-marked::before {
+        content: "⬜";
+        margin-right: 20px;
+      }
+      .fruit1 {
+        text-decoration: line-through;
+      }
+      .x {
+        color: red;
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="check-list">
+      <li class="odd not-marked">Hit the gym<span class="x"> ✖</span></li>
+      <li class="checked marked"><span class="fruit1">Pay bills</span><span class="x"> ✖</span></li>
+      <li class="odd not-marked">Meet John<span class="x"> ✖</span></li>
+      <li class="even not-marked">Buy eggs<span class="x"> ✖</span></li>
+      <li class="checked marked"><span class="fruit1">Read a book</span><span class="x"> ✖</span></li>
+      <li class="even not-marked">Organize office<span class="x"> ✖</span></li>
+      <li class="odd not-marked">Eat dinner<span class="x"> ✖</span></li>
+      <li class="even not-marked">Buy apples<span class="x"> ✖</span></li>
+      <li class="odd not-marked">Meet George<span class="x"> ✖</span></li>
+      <li class="even not-marked">Feed the cat<span class="x"> ✖</span></li>
+      <li class="checked marked"><span class="fruit1">Write a letter</span><span class="x"> ✖</span></li>
+      <li class="even not-marked">Run 1 km<span class="x"> ✖</span></li>
+    </ul>
+  </body>
+</html>
