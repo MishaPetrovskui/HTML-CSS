@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription Plans</title>
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+    <header>
+        <section class="plans-container">
+            <section class="plan ENTERPRISE">
+                <br>
+                <h2>ENTERPRISE</h2>
+                <hr class="separator red">
+                <h1>$69</h1>
+                <h3 class="price-details"><strong>per month</strong></h3>
+                <p class="additional-info"><strong>10 GB disk space</strong></p>
+                <p class="additional-info"><strong>100GB monthly bandwidth</strong></p>
+                <p class="additional-info"><strong>20 email accounts</strong></p>
+                <p class="additional-info"><strong>Unlimited subdomains</strong></p>
+                <br>
+                <div class="box box-red">
+                    <p>BUY</p>
+                </div>
+                <br>
+            </section>
+            <section class="plan PROFESSIONAL">
+                <br>
+                <h2>PROFESSIONAL</h2>
+                <hr class="separator yellow">
+                <h1>$29</h1>
+                <h3 class="price-details">per month</h3>
+                <p class="additional-info"><strong>5GB disk space</strong></p>
+                <p class="additional-info"><strong>60GB monthly bandwidth</strong></p>
+                <p class="additional-info"><strong>10 email accounts</strong></p>
+                <p class="additional-info"><strong>Unlimited subdomains</strong></p>
+                <br>
+                <div class="box box-yellow">
+                    <p>BUY</p>
+                </div>
+                <br>
+            </section>
+            <section class="plan STANDARD">
+                <br>
+                <h2>STANDARD</h2>
+                <hr class="separator blue">
+                <h1>$19</h1>
+                <h3 class="price-details">per month</h3>
+                <p class="additional-info"><strong>3GB disk space</strong></p>
+                <p class="additional-info"><strong>30GB monthly bandwidth</strong></p>
+                <p class="additional-info"><strong>5 email accounts</strong></p>
+                <p class="additional-info"><strong>Unlimited subdomains</strong></p>
+                <br>
+                <div class="box box-blue">
+                    <p>BUY</p>
+                </div>
+                <br>
+            </section>
+            <section class="plan BASIC">
+                <br>
+                <h2>BASIC</h2>
+                <hr class="separator green">
+                <h1>$9</h1>
+                <h3 class="price-details">per month</h3>
+                <p class="additional-info"><strong>1GB disk space</strong></p>
+                <p class="additional-info"><strong>10GB monthly bandwidth</strong></p>
+                <p class="additional-info"><strong>2 email accounts</strong></p>
+                <p class="additional-info"><strong>Unlimited subdomains</strong></p>
+                <br>
+                <div class="box box-green">
+                    <p>BUY</p>
+                </div>
+                <br>
+            </section>
+        </section>
+    </header>
+</body>
+</html>
+
+css
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+header {
+    text-align: center;
+}
+
+.plans-container {
+    margin-top: 20px;
+}
+
+.plan {
+    display: inline-block;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    width: 21%;
+    margin: 0 10px;
+    transition: transform 1s, z-index 0s 1s;
+    position: relative;
+    z-index: 1;
+}
+
+.plan:hover {
+    transform: scale(1.1);
+    z-index: 10;
+    transition: transform 1s, z-index 0s;
+}
+
+.plan h2 {
+    margin-top: 0;
+}
+
+.plan .separator {
+    border: 0;
+    height: 4px;
+    margin: 20px 0;
+}
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: rgb(221, 189, 8);
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
+
+.price-details {
+    color: grey;
+}
+
+.additional-info {
+    text-align: center;
+    color: black;
+}
+.box {
+    padding: 3px;
+    background-color: gray;
+    border-radius: 10px;
+    margin-right: 30%;
+    margin-left: 30%;
+    cursor: pointer;
+    color: white;
+}
+div.box-green {
+    background-color: green;
+}
+div.box-red {
+    background-color: red;
+}
+div.box-yellow {
+    background-color: rgb(221, 189, 8);
+}
+div.box-blue {
+    background-color: blue;
+}
