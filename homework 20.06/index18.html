@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Example</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: rgb(206, 206, 206);
+        }
+        .container {
+            min-height: 100vh;
+        }
+        .sidebar {
+            background-color: #333;
+            width: 200px;
+            height: 100%;
+            position: fixed;
+            overflow: auto;
+        }
+        .sidebar .logo img {
+            width: 100px;
+            margin: 20px 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .sidebar ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        .sidebar ul li {
+            width: 100%;
+        }
+        .sidebar ul li a {
+            display: block;
+            padding: 10px 20px;
+            color: #fff;
+            text-decoration: none;
+        }
+        .sidebar ul li a:hover {
+            background-color: #575757;
+        }
+        .content {
+            margin-left: 220px;
+            padding: 20px;
+            width: calc(100% - 240px);
+            box-sizing: border-box;
+        }
+        header {
+            margin-bottom: 20px;
+        }
+        header h1 {
+            color: #000;
+            font-weight: bold;
+        }
+        .statistics {
+            margin-bottom: 20px;
+        }
+        .traffic, .loads {
+            padding: 20px;
+            background-color: #ececec;
+            width: 45%;
+            display: inline-block;
+            vertical-align: top;
+            margin-right: 5%;
+            box-sizing: border-box;
+        }
+        .loads {
+            margin-right: 0;
+        }
+        .stats img {
+            width: 100%;
+        }
+        .recent-activity {
+            margin-bottom: 20px;
+        }
+        .list {
+            width: 100%;
+            background-color: #ececec;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .list h2 {
+            margin: 0 0 20px 0;
+        }
+        .list .header, .list .row {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .list .header {
+            font-weight: bold;
+            color: black;
+        }
+        .list .cell {
+            display: inline-block;
+            padding: 5px 10px;
+            box-sizing: border-box;
+            vertical-align: middle;
+        }
+        .list .cell.title {
+            width: 50%;
+        }
+        .list .cell.author {
+            width: 20%;
+        }
+        .list .cell.date {
+            width: 15%;
+            text-align: right;
+        }
+        .list .cell:not(.title):not(.author):not(.date) {
+            width: 10%;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding-top: 220px;
+            }
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+            .content {
+                margin-left: 0;
+                width: 100%;
+                padding: 20px;
+            }
+            .traffic, .loads {
+                width: 100%;
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <div class="logo">
+                <img src="https://img.freepik.com/premium-vector/circular-chart-with-6-round-elements-placed-around-central-hexagon-thin-line-symbols-text-boxes-six-steps-business-success-concept_71344-1697.jpg" alt="Logo">
+            </div>
+            <ul>
+                <hr color="black">
+                <li><a href="#">Dashboard</a></li>
+                <hr color="black">
+                <li><a href="#">Users</a></li>
+                <hr color="black">
+                <li><a href="#">File Manager</a></li>
+                <hr color="black">
+                <li><a href="#">Posts</a></li>
+                <hr color="black">
+                <li><a href="#">Events</a></li>
+                <hr color="black">
+            </ul>
+        </nav>
+        <div class="content">
+            <header>
+                <h1>Dashboard - May 25, 2019</h1>
+            </header>
+            <section class="statistics">
+                <div class="traffic">
+                    <h2>Traffic</h2>
+                    <p style="text-align: center;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQANyad21bGag1cdMoHqBPBj4sKzpTEDHMYww&s" style="width: auto; height: 100%;"></p>
+                </div>
+                <div class="loads">
+                    <h2>Loads</h2>
+                    <p style="text-align: center;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSchEG1k6vuLb5mhrlMX5emWAKbwPxrGvI1sg&s" style="width: auto; height: 100%;"></p>
+                </div>
+            </section>
+            <section class="recent-activity">
+                <div class="list">
+                    <h2>Recent Activity</h2>
+                    <div class="header">
+                        <div class="cell">№</div>
+                        <div class="cell title">Title</div>
+                        <div class="cell author">Author</div>
+                        <div class="cell date">Date</div>
+                    </div>
+                    <div class="row">
+                        <div class="cell">1</div>
+                        <div class="cell title">Elit an eu est et amet nisi eifend aliquam</div>
+                        <div class="cell author">Phoebe Britton</div>
+                        <div class="cell date">25/05/19</div>
+                    </div>
+                    <div class="row">
+                        <div class="cell">2</div>
+                        <div class="cell title">Ut maximus lacus ut ante tristique, et rutrum leo eleifend</div>
+                        <div class="cell author">Rosina Clay</div>
+                        <div class="cell date">25/05/19</div>
+                    </div>
+                    <div class="row">
+                        <div class="cell">3</div>
+                        <div class="cell title">Donec eget ligula sed diam pharetra sodales geta metus</div>
+                        <div class="cell author">Ayush Horn</div>
+                        <div class="cell date">24/05/19</div>
+                    </div>
+                    <div class="row">
+                        <div class="cell">4</div>
+                        <div class="cell title">Cumtabitur bibendum odio in velit pretium luctus</div>
+                        <div class="cell author">Jillian Carver</div>
+                        <div class="cell date">23/05/19</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
